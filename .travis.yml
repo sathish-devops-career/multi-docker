@@ -23,14 +23,13 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
-  region: us-west-1
-  app: multi-docker
-  env: MultiDocker-env
-  bucket_name: elasticbeanstalk-us-west-1-306476627547
-  bucket_path: docker-multi
+  region: eu-west-2
+  app: Multi-docker
+  env: MultiDocker-env-1
+  bucket_name: elasticbeanstalk-eu-west-2-253430545278
+  bucket_path: Multi-docker
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
